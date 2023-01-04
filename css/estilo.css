@@ -2,6 +2,7 @@ body {
     background-color: #110041;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Aqui comienza el HEADER */
@@ -33,7 +34,45 @@ body {
     margin: 1rem;;
     height: 35vh;
     border-radius: 30px;
+    border: 1px solid #000;
     background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 /* Aqui comienzan los botones para agregar dinero o gastos */
+.botones {
+    display: flex;
+    justify-content: center;
+}
+.btn1 {
+    margin: 0 0.3rem 1rem 1rem;
+    width: 49%;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #291a54;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.btn2 {
+    margin: 0 1rem 1rem 0.3rem;
+    width: 49%;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #291a54;
+    color: #fff;
+    letter-spacing: 2px;
+
+}
+/* Aqui comienza la seccion de movimientos */
+.movimientos {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 100vh;
+    margin: 1rem;
+}
+.movimientos > p {
+    color: #fff;
+}
+.movimientos > a {
+    color: #874ed9;
+}
