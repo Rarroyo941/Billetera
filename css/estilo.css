@@ -1,3 +1,39 @@
 body {
-    background-color: red;
+    background-color: #110041;
+    margin: 0;
+    padding: 0;
 }
+
+/* Aqui comienza el HEADER */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+}
+/* Icono menu navegación */
+#header > i {
+    font-size: 2rem;
+    color: aliceblue;
+}
+/* Logo billetera */
+#header > img {
+    margin-left: 3%;
+    width: 30px;
+    height: 30px;
+}
+/* Modo DIURNO-NOCTURNO */
+.switch > span > i {
+    font-size: 1.3rem;
+}
+/* Aqui termina el HEADER */
+
+/* Aqui comienza el display de montos */
+.displaydiv {
+    margin: 1rem;;
+    height: 35vh;
+    border-radius: 30px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+/* Aqui comienzan los botones para agregar dinero o gastos */
