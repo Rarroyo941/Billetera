@@ -35,8 +35,15 @@ body {
     height: 35vh;
     border-radius: 30px;
     border: 1px solid #000;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-image: linear-gradient(to right bottom, #5937e1, #d31ab1, #ff4d86, #ff8a73, #ffce8f, #ff9372, #ff6d76, #fc4386);
+    background-size: 200%;
+    animation: cambiar 4s linear infinite;
+}
+
+@keyframes cambiar {
+0%{background-position: 0 50%;}
+50%{background-position: 100% 50%;}
+100%{background-position: 0 50%;}
 }
 /* Aqui comienzan los botones para agregar dinero o gastos */
 .botones {
@@ -60,7 +67,6 @@ body {
     background-color: #291a54;
     color: #fff;
     letter-spacing: 2px;
-
 }
 /* Aqui comienza la seccion de movimientos */
 .movimientos {
@@ -69,10 +75,15 @@ body {
     align-content: center;
     height: 100vh;
     margin: 1rem;
+    background-color: antiquewhite;
 }
 .movimientos > p {
     color: #fff;
+    background-color: blue;
+    margin-top: 0;
+    
 }
 .movimientos > a {
     color: #874ed9;
+    background-color: red;
 }
