@@ -35,9 +35,9 @@ body {
     height: 35vh;
     border-radius: 30px;
     border: 1px solid #000;
-    background-image: linear-gradient(to right bottom, #5937e1, #d31ab1, #ff4d86, #ff8a73, #ffce8f, #ff9372, #ff6d76, #fc4386);
-    background-size: 200%;
-    animation: cambiar 4s linear infinite;
+    background-image: linear-gradient(to right bottom, #5937e1, #b832c3, #e44da9, #f9759b, #ff9f9e, #ffa69e, #ffaea0, #ff9d92, #ff8388, #ff6684, #fc4386);
+    background-size: 400%;
+    animation: cambiar 5s linear infinite;
 }
 
 @keyframes cambiar {
@@ -45,6 +45,40 @@ body {
 50%{background-position: 100% 50%;}
 100%{background-position: 0 50%;}
 }
+.tituloDisponible {
+    text-align: center;
+}
+#disponible {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.display2 {
+    display: flex;
+    justify-content: space-around;
+    height: 3rem;
+    margin-bottom: 0;
+    
+}
+.display3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 4rem;
+    margin-top: 0;
+    margin-top: 0;;
+    
+}
+/*#totalIngresos {
+
+}
+#totalGastos {
+    
+}*/
+
 /* Aqui comienzan los botones para agregar dinero o gastos */
 .botones {
     display: flex;
@@ -75,15 +109,13 @@ body {
     align-content: center;
     height: 100vh;
     margin: 1rem;
-    background-color: antiquewhite;
 }
 .movimientos > p {
     color: #fff;
-    background-color: blue;
     margin-top: 0;
-    
+    flex-grow: 1;
 }
 .movimientos > a {
     color: #874ed9;
-    background-color: red;
+    text-decoration: none;
 }
