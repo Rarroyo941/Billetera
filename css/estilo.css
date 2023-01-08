@@ -19,6 +19,9 @@ body {
     color: #f1f1f1;
     margin-left: 8%;
 }
+#header > i:hover {
+    cursor: pointer;
+}
 /* Logo billetera */
 #header > a {
     margin-left: 2%;
@@ -82,21 +85,33 @@ body.dark .tituloDisponible {
 }
 body.dark h3 {
     color: #000;
+    text-shadow:none;
 }
-body.dark h2 {
+body.dark #totalIngresos {
+    text-shadow:none;
     color: #000;
 }
-body.dark .disponible {
+body.dark #totalGastos {
+    text-shadow:none;
     color: #000;
+}
+body.dark #disponible {
+    color: #000;
+    text-shadow:none;
 }
 
 body.dark .btn1  {
     background-image: linear-gradient(to right bottom, #5937e1, #b832c3, #e44da9, #f9759b, #ff9f9e, #ffa69e, #ffaea0, #ff9d92, #ff8388, #ff6684, #fc4386);
     color: #000;
+    background-size: 400%;
+    animation: cambiar 5s linear infinite;
 }
+
 body.dark .btn2 {
     background-image: linear-gradient(to right bottom, #5937e1, #b832c3, #e44da9, #f9759b, #ff9f9e, #ffa69e, #ffaea0, #ff9d92, #ff8388, #ff6684, #fc4386);
     color: #000;
+    background-size: 400%;
+    animation: cambiar 5s linear infinite;
 }
 body.dark .btn1:hover {
     background-image: none;
@@ -167,6 +182,13 @@ body.dark .navbar > a {
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
     color: #fff;
+    text-shadow: 2px 1px 1px #000;
+}
+#totalIngresos {
+    text-shadow: 2px 1px 1px #000;
+}
+#totalGastos {
+    text-shadow: 2px 1px 1px #000;
 }
 /* Muestra el "Total Ingresos y Total Gastos" */
 .display2 {
@@ -228,14 +250,12 @@ body.dark .navbar > a {
     background-color: rgba(0, 255, 0, 0.38);
     cursor: pointer;
     font-size: 1.5rem;
-    padding: 0;
     text-shadow: 1px 1px 1px #000;
 }
 .btn2:hover {
     background-color: rgba(255, 0, 0, 0.42);
     cursor: pointer;
     font-size: 1.5rem;
-    padding: 0;
     text-shadow: 1px 1px 1px #000;
 }
 /* aqui terminan los botones */
@@ -259,7 +279,7 @@ body.dark .navbar > a {
 }
 /* MEDIA QUERY PARA TABLET/NOTEBOOKS */
 
-@media screen and (min-width: 640px) and (max-width: 1280px) {
+@media screen and (min-width: 640px) {
     #header {
         height: 4rem;
     }
@@ -278,5 +298,14 @@ body.dark .navbar > a {
     .navbar > a:hover {
         text-shadow: 1px 1px 1px #fff;
         font-size: 1.3rem;
+    }
+    .btn1 {
+        font-size: 1.5rem;
+    }
+    .btn2 {
+        font-size: 1.5rem;
+    }
+    .movimientos p, a {
+        font-size: 1.4rem;
     }
   }
