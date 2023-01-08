@@ -24,12 +24,43 @@ body {
     height: 30px;
 }
 /* Modo DIURNO-NOCTURNO */
-.switch > span > i {
-    font-size: 1.3rem;
+.switch {
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+
+    margin-right: 3%;
+}
+.switch > span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}
+.switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: unset;
+    right: 0;
+    border-radius: 100px;
+    transition: .3 ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
 }
 /* Aqui termina el HEADER */
 
 /* Aqui comienza el display de montos */
+
 .displaydiv {
     margin: 1rem;;
     height: 35vh;
@@ -45,23 +76,47 @@ body {
 50%{background-position: 100% 50%;}
 100%{background-position: 0 50%;}
 }
+/* Primer Sombra del display */
+#sombra1 {
+    position: relative;
+    margin: -0.9rem auto 1rem auto;
+    height: 2rem;
+    width: 86vw;
+    border-radius: 30px;
+    background-color: #aa4870;
+    z-index: -1;
+}
+/* Segunda Sombra del display */
+#sombra2 {
+    position: relative;
+    margin: -2.5rem auto 1rem auto;
+    height: 2rem;
+    width: 84vw;
+    border-radius: 30px;
+    background-color: #572356;
+    z-index: -2;
+}
 .tituloDisponible {
     text-align: center;
+    color: #fff;
 }
 #disponible {
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.3rem;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
+    color: #fff;
 }
-
+/* Muestra el "Total Ingresos y Total Gastos" */
 .display2 {
     display: flex;
     justify-content: space-around;
     height: 3rem;
     margin-bottom: 0;
-    
+    color: #fff;
 }
+
+/* Muestra el monto de "Total Ingresos y Total Gastos" */
 .display3 {
     display: flex;
     justify-content: space-around;
@@ -70,7 +125,7 @@ body {
     height: 4rem;
     margin-top: 0;
     margin-top: 0;;
-    
+    color: #fff;
 }
 /*#totalIngresos {
 
@@ -83,7 +138,9 @@ body {
 .botones {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
+/* Boton "AGREGAR DINERO" */
 .btn1 {
     margin: 0 0.3rem 1rem 1rem;
     width: 49%;
@@ -93,6 +150,7 @@ body {
     color: #fff;
     letter-spacing: 1px;
 }
+/* Boton "AGREGAR GASTO" */
 .btn2 {
     margin: 0 1rem 1rem 0.3rem;
     width: 49%;
@@ -100,7 +158,7 @@ body {
     border-radius: 20px;
     background-color: #291a54;
     color: #fff;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 /* Aqui comienza la seccion de movimientos */
 .movimientos {
