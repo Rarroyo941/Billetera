@@ -79,19 +79,18 @@ body {
 /* Primer Sombra del display */
 #sombra1 {
     position: relative;
-    margin: -0.9rem auto 1rem auto;
+    margin: -0.9rem 3% 1rem 3%;
     height: 2rem;
-    width: 86vw;
     border-radius: 30px;
     background-color: #aa4870;
     z-index: -1;
+    
 }
 /* Segunda Sombra del display */
 #sombra2 {
     position: relative;
-    margin: -2.5rem auto 1rem auto;
+    margin: -2.5rem 5% 1rem 5%;
     height: 2rem;
-    width: 84vw;
     border-radius: 30px;
     background-color: #572356;
     z-index: -2;
