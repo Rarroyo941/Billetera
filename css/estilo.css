@@ -57,6 +57,15 @@ body {
     transition: .3 ease all;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
 }
+.active {
+    background-color: orange;
+    
+}
+.active::after {
+    left: 0;
+    right: unset;
+}
+
 /* Aqui termina el HEADER */
 
 /* Aqui comienza el display de montos */
@@ -79,7 +88,7 @@ body {
 /* Primer Sombra del display */
 #sombra1 {
     position: relative;
-    margin: -0.9rem 3% 1rem 3%;
+    margin: -2.3rem 3% 1rem 3%;
     height: 2rem;
     border-radius: 30px;
     background-color: #aa4870;
