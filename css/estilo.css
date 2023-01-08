@@ -16,15 +16,21 @@ body {
 /* Icono menu navegación */
 #header > i {
     font-size: 2rem;
-    color: aliceblue;
+    color: #f1f1f1;
+    margin-left: 8%;
 }
 /* Logo billetera */
-#header > img {
-    margin-left: 3%;
+#header > a {
+    margin-left: 2%;
+}
+#header > a > img {
     width: 30px;
     height: 30px;
 }
-/* Modo DIURNO-NOCTURNO */
+.navbar {
+    display:none;
+}
+/* Aqui empieza el Modo DIURNO-NOCTURNO */
 .switch {
     background: #443a6F;
     border-radius: 1000px;
@@ -64,6 +70,51 @@ body {
 .dark {
     background: #f1f1f1;
 }
+body.dark .movimientos > p {
+    color: #000;
+}
+body.dark #header > i {
+    color: #000;
+}
+body.dark .tituloDisponible {
+    color: #000;
+}
+body.dark h3 {
+    color: #000;
+}
+body.dark h2 {
+    color: #000;
+}
+body.dark .disponible {
+    color: #000;
+}
+
+body.dark .btn1  {
+    background-image: linear-gradient(to right bottom, #5937e1, #b832c3, #e44da9, #f9759b, #ff9f9e, #ffa69e, #ffaea0, #ff9d92, #ff8388, #ff6684, #fc4386);
+    color: #000;
+}
+body.dark .btn2 {
+    background-image: linear-gradient(to right bottom, #5937e1, #b832c3, #e44da9, #f9759b, #ff9f9e, #ffa69e, #ffaea0, #ff9d92, #ff8388, #ff6684, #fc4386);
+    color: #000;
+}
+body.dark .btn1:hover {
+    background-image: none;
+    background-color: rgba(99, 211, 24, 1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0;
+    text-shadow: 1px 1px 1px #000;
+}
+body.dark .btn2:hover {
+    background-image: none;
+    background-color: rgba(241, 59, 59, 1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0;
+    text-shadow: 1px 1px 1px #000;
+}
+
+/* aqui termina el modo diurno-nocturno */
 
 /* Aqui termina el HEADER */
 
@@ -87,12 +138,11 @@ body {
 /* Primer Sombra del display */
 #sombra1 {
     position: relative;
-    margin: -2.3rem 3% 1rem 3%;
+    margin: -0.9rem 3% 1rem 3%;
     height: 2rem;
     border-radius: 30px;
     background-color: #aa4870;
     z-index: -1;
-    
 }
 /* Segunda Sombra del display */
 #sombra2 {
@@ -167,6 +217,23 @@ body {
     color: #fff;
     letter-spacing: 1px;
 }
+
+.btn1:hover {
+    background-color: rgba(0, 255, 0, 0.38);
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0;
+    text-shadow: 1px 1px 1px #000;
+}
+.btn2:hover {
+    background-color: rgba(255, 0, 0, 0.42);
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0;
+    text-shadow: 1px 1px 1px #000;
+}
+/* aqui terminan los botones */
+
 /* Aqui comienza la seccion de movimientos */
 .movimientos {
     display: flex;
@@ -184,3 +251,25 @@ body {
     color: #874ed9;
     text-decoration: none;
 }
+/* MEDIA QUERY PARA TABLET/NOTEBOOKS */
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    #header {
+        height: 4rem;
+    }
+    #header > i {
+        display: none;
+    }
+    .navbar {
+        display: block;
+    }
+    .navbar > a {
+        text-decoration: none;
+        color: #f1f1f1;
+        padding: 10px 25px;
+    }
+    .navbar > a:hover {
+        text-shadow: 1px 1px 1px #fff;
+        font-size: 1.3rem;
+    }
+  }
