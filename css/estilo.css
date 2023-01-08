@@ -297,7 +297,17 @@ body.dark .navbar > a {
     }
     .navbar > a:hover {
         text-shadow: 1px 1px 1px #fff;
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        height: 2rem;
+    }
+    h2 {
+        height: 2rem;
+    }
+    #sombra1 {
+        margin: -0.4rem 3% 1rem 3%;
     }
     .btn1 {
         font-size: 1.5rem;
