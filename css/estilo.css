@@ -265,19 +265,19 @@ body.dark .navbar > a {
 /* aqui terminan los botones */
 
 /* Aqui comienza la seccion de movimientos */
-.movimientos {
+.mov {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    height: 100vh;
+    height: 2rem;
     margin: 1rem;
 }
-.movimientos > p {
+.mov > p {
     color: #fff;
     margin-top: 0;
     flex-grow: 1;
 }
-.movimientos > a {
+.mov > a {
     color: #874ed9;
     text-decoration: none;
 }
@@ -386,5 +386,12 @@ body.dark .navbar > a {
     }
     .movimientos p, a {
         font-size: 1.4rem;
+    }
+    .imprimir {
+        display: flex;
+        justify-content: space-around;
+        color: #f1f1f1;
+        padding: 0.5rem;
+        text-transform: uppercase;
     }
   }

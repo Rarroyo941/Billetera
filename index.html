@@ -63,18 +63,23 @@
         </div>
         <div class="inputGasto">
             <label>INGRESE GASTO:</label>
+            <form class="form" id="jsForm">
             <div class="inputsGastos">
                 <input class="inputGastoTexto" type="text" id="concepto" placeholder="Concepto" name="gastoTexto" required>
-                <input class="inputGastoNumero" type="number" id="montoGasto"placeholder="Monto" name="gastoNumero"required>
+                <input class="inputGastoNumero" type="number" id="montoGasto"placeholder="Monto" name="gastoNumero" required>
                 <button type="submit" id="btnGasto">
                     <i class="fa-solid fa-plus"></i>
+                
                 </button>
             </div>
+        </form>
         </div>
     </section>
     <section class="movimientos">
-        <p>Movimientos</p><a href="#">Ver todos</a>
-        <ul>
+        <div class="mov">
+        <p>Movimientos</p><a href="#">Historial</a>
+        </div>
+        <ul id="contenedorGastos">
 
         </ul>
     </section>
